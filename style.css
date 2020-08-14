@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
 
-html{
+*{
   font-family: 'Bree Serif', serif;
   box-sizing: border-box;
   margin: 0;
@@ -16,7 +16,7 @@ body {
   text-align: center;
   color: cyan;
   font-size: 60px;
-  font-family: 'Parisienne', cursive;
+  font-family: 'Satisfy', cursive;
   font-weight: bold;
   padding-top: 10px;
 }
@@ -116,7 +116,7 @@ body {
 }
 @media screen and (max-width: 360px){
   #title {
-    font-size: 25px;
+    font-size: 28px;
   }
   #app {
     width: 98vw;
