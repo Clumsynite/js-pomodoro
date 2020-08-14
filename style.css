@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
 
-*{
+html{
   font-family: 'Bree Serif', serif;
   box-sizing: border-box;
+  margin: 0;
 }
 body {
   background-color: #0A090C;
+  margin: 1vw;
+}
+#title {
+  width: 100%;
+  text-align: center;
+  color: cyan;
+  font-size: 60px;
+  font-family: 'Parisienne', cursive;
+  font-weight: bold;
+  padding-top: 10px;
 }
 #app {
   display: flex;
@@ -14,7 +26,7 @@ body {
   align-items: center;
 }
 #container {
-  margin: 5% auto;
+  margin: 40px auto;
   width: 450px;
   display: grid;
   justify-items: center;
@@ -23,7 +35,6 @@ body {
   grid-template-areas:
     '. .'
     'timer timer';
-  row-gaps: 10px;
   background-color: cyan;
   padding: 30px 0;
   border-radius: 30px;
@@ -64,7 +75,6 @@ body {
   flex-flow: column;
   padding: 10px;
   font-size: 30px;
-  min-width: 300px;
 }
 #time-left {
   font-size: 50px;
@@ -92,4 +102,42 @@ body {
 }
 #reset {
   color: #ff0600;
+}
+
+@media screen and (max-width: 720px){
+  #title {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 450px){
+  #title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 360px){
+  #title {
+    font-size: 25px;
+  }
+  #app {
+    width: 98vw;
+  }
+  #container{
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+  }
+  #timer-div {
+    font-size: 20px;
+    padding: 0;
+  }
+  #time-left {
+    font-size: 30px;
+  }
+  #controls {
+    width: 200px;
+  }
+  .ctrl {
+    font-size: 28px;
+  }
+  
 }
