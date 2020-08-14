@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+
+*{
+  font-family: 'Bree Serif', serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0A090C;
+}
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  margin: 5% auto;
+  width: 450px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    '. .'
+    'timer timer';
+  row-gaps: 10px;
+  background-color: cyan;
+  padding: 30px 0;
+  border-radius: 30px;
+  font-size: 20px;
+  color: #0A090C;
+  font-weight: bold;
+}
+
+.btns {
+  display: flex;
+  flex-flow: cloumn wrap;
+  text-align: center;
+  width: 120px;
+  justify-content: space-between;
+  align-content: start;
+}
+.hilo {
+  display: inline-block;
+  color: #003bff;
+  background: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.len {
+  font-size: 30px;
+  min-width: 30px;
+  color: red;
+}
+#timer-div {
+  margin-top: 10px;
+  grid-area: timer;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  padding: 10px;
+  font-size: 30px;
+  min-width: 300px;
+}
+#time-left {
+  font-size: 50px;
+  font-family: 'Nova Mono', monospace;
+  border: 2px solid #333333;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+#controls {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-between;
+  width: 300px;
+}
+.ctrl{
+  font-size: 30px;
+  border: none;
+  background: none;
+  outline: none;
+}
+#start_stop {
+  color: blue;
+}
+#reset {
+  color: #ff0600;
+}
