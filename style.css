@@ -103,7 +103,12 @@ body {
 #reset {
   color: #ff0600;
 }
-
+.sess{
+  color: #0000c4;
+}
+.break {
+  color: red;
+}
 @media screen and (max-width: 720px){
   #title {
     font-size: 50px;

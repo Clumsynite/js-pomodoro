@@ -145,11 +145,11 @@ class Timer extends React.Component{
   }
   render(){
     return(
-    <div id='timer-div'>
+    <div id='timer-div' className={this.props.label==='Session'? 'sess' : 'break'}>
        <div id='timer-label'>
           {this.props.label}
         </div>
-        <div id='time-left'>
+        <div id='time-left' className={this.props.label==='Session'? 'sess' : 'break'}>
           {this.props.timeLeft}
         </div>
         <div id='controls'>
